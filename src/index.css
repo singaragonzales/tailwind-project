@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,78 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.link{
+  @apply text-white block p-5 font-bold hover:text-yellow-500
+}
+
+.link-white{
+  @apply border-4 border-yellow-400 text-white font-bold p-2 rounded-full hover:bg-white hover:text-black transition duration-500
+}
+
+.link-red{
+  @apply 
+      rounded-full 
+      bg-red-500 
+      text-white 
+      font-bold 
+      px-4 
+      py-3 
+      hover:bg-white 
+      hover:text-black 
+      transition 
+      duration-500
+}
+
+.buttons-section{
+  @apply
+    inline-block 
+    py-3 
+    px-16
+    text-white 
+    font-bold 
+    border-transparent 
+    border-8 
+    text-2xl 
+    rounded-3xl 
+    hover:border-gray-200 
+    hover:bg-white 
+    hover:text-black 
+    transition 
+    duration-200
+}
+
+.dot{
+  @apply h-3 w-3 bg-blue-500 rounded-full
+}
+
+.buttons{
+  @apply my-4 inline-block py-2 px-16 bg-rose-500 text-white font-black border-transparent border-8 rounded-3xl hover:border-gray-200 hover:bg-white hover:text-black transition duration-200 
+}
+
+.arrow-group{
+  @apply
+  w-4 h-4 inline-block border-yellow-300 border-solid border-t-[5px] border-r-[5px] transition-all transform rotate-45
+}
+
+/* Imagenes */
+.bg-wave-white{
+  background-image: url('./assets/img/wave-white.png');
+}
+.bg-yellow-dots{
+  background-image: url('./assets/img/pattern-yellow-dots.png');
+}
+.bg-wave-pink{
+  background-image: url('./assets/img/wave-pink.png');
+}
+.bg-white-dots{
+  background-image: url('./assets/img/pattern-white-dots.png');
+}
+.bg-characters-red{
+  background-image: url('./assets/img/pattern-characters-red.png');
+}
+.bg-characters-mario{
+  background-image: url('./assets/img/character-l.png');
 }
